@@ -15,11 +15,12 @@ manifest:
     # My Keyboards
     - name: demo_dactyl
       remote: tmbutcher
+      revision: main
       import: west.yml
 
     - name: empire
       remote: tmbutcher
-      import: west.yml
+      revision: main
 
     # Other Modules
     - name: zmk-helpers
