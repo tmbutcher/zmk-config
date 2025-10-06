@@ -18,19 +18,9 @@ manifest:
       revision: main
       import: config/west.yml
 
-    - name: empire
+    - name: Empire-Keyboard
       remote: tmbutcher
       revision: main
 
-    # Other Modules
-    - name: zmk-helpers
-      remote: urob
-      # revision: main
-    - name: zmk-unicode
-      remote: urob
-      # revision: main
-    - name: zmk-auto-layer
-      remote: urob
-      # revision: main
   self:
     path: config
