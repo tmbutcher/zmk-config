@@ -16,7 +16,7 @@ manifest:
     - name: demo_dactyl
       remote: tmbutcher
       revision: main
-      import: west.yml
+      import: config/west.yml
 
     - name: empire
       remote: tmbutcher
