@@ -2,10 +2,34 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: tmbutcher
+      url-base: https://github.com/tmbutcher
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    
+    # My Keyboards
+    - name: demo_dactyl
+      remote: tmbutcher
+      import: west.yml
+
+    - name: empire
+      remote: tmbutcher
+      import: west.yml
+
+    # Other Modules
+    - name: zmk-helpers
+      remote: urob
+      # revision: main
+    - name: zmk-unicode
+      remote: urob
+      # revision: main
+    - name: zmk-auto-layer
+      remote: urob
+      # revision: main
   self:
     path: config
