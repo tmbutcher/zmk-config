@@ -11,30 +11,32 @@
 #define ___		&trans
 
 
-keymap {
-	compatible = "zmk,keymap";
+/ {
+	
+	keymap {
+		compatible = "zmk,keymap";
 
-	default_layer { 
-		display-name = "Default";
-		bindings = <
+		default_layer { 
+			display-name = "Default";
+			bindings = <
 &kp N1		  &kp N2		&kp N3		  &kp N4		&kp N5		  &kp N6		&kp N7		  &kp N8		&kp N9		  &kp N0		&kp MINUS	  &kp EQUAL		&kp BSPC
 &kp Q		  &kp W			&kp E		  &kp R						  &kp R			&kp T		  &kp I			&kp O		  &kp Y			&kp P		  xxx			xxx
 &kp A		  &kp S			&kp D		  &kp F						  &kp V			&kp H		  &kp J			&kp K		  &kp L			&kp APOS					&kp ENTER
 &kp Z		  &kp X			&kp C		  							  &kp B			&kp N		  &kp M													  				&mo SHIFT
 &kp LCTRL	  &kp LALT												  &kp SPACE												  &kp RALT		&kp RGUI					&kp RCTRL
-		>;
-	};
+			>;
+		};
 	
-	default_layer { 
-		display-name = "Shift";
-		bindings = <
+		default_layer { 
+			display-name = "Shift";
+			bindings = <
 &kp RS(N1)	  &kp RS(N2)	&kp RS(N3)	  &kp RS(N4)	&kp RS(N5)	  &kp RS(N6)	&kp RS(N7)	  &kp RS(N8)	&kp RS(N9)	  &kp RS(N0)	&kp RS(MINUS) &kp RS(EQUAL)	&kp RS(BSPC)
 &kp Q		  &kp W			&kp RS(E)	  &kp R						  &kp RS(R)		&kp RS(T)	  &kp RS(I)		&kp RS(O)	  &kp RS(Y)		&kp RS(P)	  xxx			xxx
 &kp RS(A)	  &kp RS(S)		&kp RS(D)	  &kp RS(F)					  &kp RS(V)		&kp RS(H)	  &kp RS(J)		&kp RS(K)	  &kp RS(L)		&kp RS(APOS)				&kp RS(ENTER)
 &kp RS(Z)	  &kp RS(X)		&kp RS(C)		  						  &kp RS(B)		&kp RS(N)	  &kp RS(M)																&mo SHIFT
 &kp RS(LCTRL) &kp RS(LALT)											  &kp RS(SPACE)											  &kp RS(RALT)	&kp RS(RGUI)				&kp RS(RCTRL)
-		>;
-	};
+			>;
+		};
 
 // [0] = LAYOUT_default( /* Base */
 // 		KC_1,		KC_2,	KC_3,	KC_4,	KC_5,	KC_6,	KC_7,	KC_8,	KC_9,	KC_0,		KC_MINS,	KC_EQL,	KC_BSPC,
@@ -53,4 +55,5 @@ keymap {
 //     ),
 
 	
+	};
 };
